@@ -202,4 +202,4 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip
 ## Change workspace to another monitor
 bindsym $mod+Shift+period move workspace to output right
 
-
+bindsym $mod+m exec --no-startup-id /path/to/your/monitor_setup.sh
