@@ -202,4 +202,12 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip
 ## Change workspace to another monitor
 bindsym $mod+Shift+period move workspace to output right
 
+# Monitor setup
 bindsym $mod+m exec --no-startup-id /path/to/your/monitor_setup.sh
+
+# Autostart
+assign [instance="Navigator"] $ws2
+assign [instance="neovide"] $ws3
+assign [instance="nautilus"] $ws4
+assign [instance="obsidian"] $ws6
+assign [instance="slack"] $ws8
