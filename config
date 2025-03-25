@@ -199,3 +199,7 @@ bindsym Ctrl+Print exec --no-startup-id maim --format=png | xclip -selection cli
 bindsym Ctrl+$mod+Print exec --no-startup-id maim --format=png --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip -selection clipboard -t image/png
 
+## Change workspace to another monitor
+bindsym $mod+Shift+period move workspace to output right
+
+
