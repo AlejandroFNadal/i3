@@ -10,5 +10,12 @@ else
 fi
 if xrandr | grep "DP-1 connected"; then
     xrandr --output DP-1 --auto --left-of HDMI-1
+else
+  xrandr --output DP-1 --off
+fi
+if xrandr | grep "DP-2 connected"; then
+    xrandr --output DP-2 --auto --right-of eDP-1
+else
+  xrandr --output DP-2 --off
 fi
 

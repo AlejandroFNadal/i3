@@ -203,11 +203,17 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip
 bindsym $mod+Shift+period move workspace to output right
 
 # Monitor setup
-bindsym $mod+m exec --no-startup-id /path/to/your/monitor_setup.sh
+bindsym $mod+m exec --no-startup-id /home/alejandro/.config/i3/monitor_setup.sh
 
 # Autostart
 assign [instance="Navigator"] $ws2
 assign [instance="neovide"] $ws3
-assign [instance="nautilus"] $ws4
+assign [instance="org.gnome.Nautilus"] $ws4
+# Tools
+assign [instance="asischartsx"] $ws5
+assign [instance="libreoffice"] $ws5
 assign [instance="obsidian"] $ws6
 assign [instance="slack"] $ws8
+
+exec --no-startup-id feh --bg-fill /home/alejandro/Pictures/wallpaper.png
+
